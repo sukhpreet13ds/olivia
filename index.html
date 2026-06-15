@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Dermatologists & Skin Specialists in Sarabha Nagar | Oliva Clinic</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00b2b8;
+            --primary-hover: #009aa0;
+            --dark-teal: #1b4250;
+            --dark-teal-hover: #14323d;
+            --text-dark: #2d3748;
+            --text-muted: #718096;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+            --font-family: 'Outfit', sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--white);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styles */
+        .header {
+            max-width: 1300px;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            background-color: var(--white);
+            /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin: 0 auto;
+        }
+
+        .logo-container img {
+            height: 42px;
+            display: block;
+        }
+
+        .header-btn {
+            background-color: var(--dark-teal);
+            color: var(--white);
+            font-weight: 500;
+            padding: 12px 24px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .header-btn:hover {
+            background-color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        .header-btn svg {
+            flex-shrink: 0;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 20px auto 0 auto;
+            padding: 0 20px;
+        }
+
+        .breadcrumb {
+            font-size: 13px;
+            color: var(--text-muted);
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Container */
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 20px 60px 20px;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /* Left Side Content */
+        .content-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #0f172a;
+            margin-bottom: 12px;
+            margin-top: 10px;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--dark-teal);
+            margin-bottom: 24px;
+        }
+
+        .description-text {
+            font-size: 18px;
+            color: #4a5568;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Read More / Read Less styles */
+        .hidden-text {
+            display: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .read-more-btn {
+            color: var(--primary);
+            font-weight: 600;
+            margin-left: 5px;
+            cursor: pointer;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .read-more-btn:hover {
+            color: var(--dark-teal);
+            text-decoration: underline;
+        }
+
+        /* Address Card */
+        .address-card {
+            display: flex;
+            background: var(--white);
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            margin-top: 30px;
+        }
+
+        .address-image-wrapper {
+            width: 40%;
+            position: relative;
+        }
+
+        .address-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .address-info {
+            width: 60%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .address-info h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+
+        .address-details {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .address-actions {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .phone-btn {
+            background-color: var(--primary);
+            color: var(--white);
+            font-weight: 500;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .phone-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .action-link {
+            font-size: 13px;
+            color: var(--dark-teal);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .action-link:hover {
+            color: var(--primary);
+        }
+
+        /* Right Side Form */
+        .form-container {
+            background-color: var(--dark-teal);
+            border-radius: 20px;
+            padding: 40px 32px;
+            color: var(--white);
+            box-shadow: 0 20px 40px rgba(27, 66, 80, 0.15);
+        }
+
+        .form-container h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .form-container p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .input-wrapper {
+            position: relative;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        .input-wrapper svg {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .input-wrapper i {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #474949a4;
+        }
+
+        .input-wrapper input,
+        .input-wrapper select {
+            width: 100%;
+            height: 54px;
+            padding: 10px 16px 10px 48px;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            background-color: var(--white);
+            font-family: var(--font-family);
+            font-size: 15px;
+            color: var(--dark-teal);
+            outline: none;
+            box-sizing: border-box;
+            transition: var(--transition);
+            appearance: none;
+        }
+
+        .input-wrapper input::placeholder {
+            color: #718096;
+            opacity: 0.8;
+        }
+
+        .input-wrapper input:focus,
+        .input-wrapper select:focus {
+            box-shadow: 0 0 0 3px rgba(0, 178, 184, 0.3);
+            border-color: var(--primary);
+        }
+
+        /* Phone Row Styles */
+        .phone-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .country-code-wrapper {
+            position: relative;
+            width: 90px;
+            flex-shrink: 0;
+        }
+
+        .country-code-wrapper select {
+            width: 100%;
+            height: 54px;
+            padding: 10px 28px 10px 16px;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            background-color: var(--white);
+            font-family: var(--font-family);
+            font-size: 15px;
+            color: var(--dark-teal);
+            outline: none;
+            box-sizing: border-box;
+            appearance: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .country-code-wrapper select:focus {
+            box-shadow: 0 0 0 3px rgba(0, 178, 184, 0.3);
+            border-color: var(--primary);
+        }
+
+        .country-code-wrapper::after {
+            content: "";
+            position: absolute;
+            right: 16px;
+            top: 52%;
+            transform: translateY(-50%);
+            border: 5px solid transparent;
+            border-top-color: var(--dark-teal);
+            pointer-events: none;
+        }
+
+        .phone-number-wrapper {
+            position: relative;
+            flex-grow: 1;
+        }
+
+        /* Select Wrapper Arrow */
+        .select-wrapper::after {
+            content: "";
+            position: absolute;
+            right: 20px;
+            top: 52%;
+            transform: translateY(-50%);
+            border: 5px solid transparent;
+            border-top-color: var(--dark-teal);
+            pointer-events: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            height: 54px;
+            background-color: var(--primary);
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 178, 184, 0.2);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .terms-text {
+            font-size: 12px !important;
+            color: rgba(255, 255, 255, 0.7) !important;
+            margin-bottom: 0 !important;
+            text-align: center;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .header {
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 26px;
+            }
+
+            .sub-title {
+                font-size: 18px;
+            }
+
+            .address-card {
+                flex-direction: column;
+            }
+
+            .address-image-wrapper {
+                width: 100%;
+                height: 200px;
+            }
+
+            .address-info {
+                width: 100%;
+                padding: 24px;
+            }
+
+            .form-container {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .address-actions {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .phone-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .action-link {
+                padding-left: 12px;
+            }
+        }
+
+        /* Top Info Bar */
+        .top-info-bar {
+            background-color: #f7fafc;
+            border-bottom: 1px solid #edf2f7;
+            padding: 8px 40px;
+            font-size: 13px;
+            color: var(--text-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-item i {
+            color: var(--primary);
+            font-size: 14px;
+        }
+
+        .payment-methods {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .payment-icons {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .payment-icon-badge {
+            background-color: #edf2f7;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--dark-teal);
+            display: inline-block;
+        }
+
+        /* Why Choose Section */
+        .why-choose-section {
+            padding: 60px 20px;
+            background-color: var(--white);
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--dark-teal);
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        .why-choose-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .why-choose-card {
+            background-color: #f0fbfc;
+            border-radius: 12px;
+            padding: 35px 24px;
+            width: calc(25% - 18px);
+            /* 4 items per row on desktop */
+            min-width: 250px;
+            flex-grow: 1;
+            max-width: 282px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            transition: var(--transition);
+        }
+
+        .why-choose-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 178, 184, 0.1);
+        }
+
+        .card-icon-wrapper {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(0, 178, 184, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-icon-wrapper i {
+            font-size: 24px;
+            color: var(--primary);
+        }
+
+        .fda-icon-wrapper {
+            width: 45px;
+            height: 45px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 13px;
+            color: var(--primary);
+            background-color: rgba(0, 178, 184, 0.08);
+        }
+
+        .why-choose-card p {
+            font-size: 14px;
+            color: var(--text-dark);
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        /* Stats Strip */
+        .stats-strip {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 40px 20px;
+            margin: 20px 0 60px 0;
+            width: 100%;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: -0.5px;
+        }
+
+        .stat-item h4 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .stat-item p {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        /* Before & After Results */
+        .before-after-section {
+            max-width: 1200px;
+            margin: 0 auto 80px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .before-after-section h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--dark-teal);
+            margin-bottom: 12px;
+        }
+
+        .before-after-section p {
+            font-size: 15px;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+        }
+
+        /* Tabs Scroller Layout */
+        .tabs-container-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+            margin: 0 auto;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 1px;
+        }
+
+        .tabs-container {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            width: 100%;
+            padding: 8px 0;
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .tabs-container::-webkit-scrollbar {
+            display: none;
+            /* Chrome/Safari */
+        }
+
+        .tab-btn {
+            background: none;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 8px 18px;
+            font-family: var(--font-family);
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-dark);
+            white-space: nowrap;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .tab-btn.active {
+            background-color: var(--white);
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: 0 2px 8px rgba(0, 178, 184, 0.15);
+        }
+
+        .tab-scroll-btn {
+            background-color: var(--white);
+            border: 1px solid #e2e8f0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            flex-shrink: 0;
+            margin-left: 10px;
+            margin-bottom: 6px;
+        }
+
+        .tab-scroll-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Adjustments for Info Bar & Header stack */
+        @media (max-width: 768px) {
+            .top-info-bar {
+                flex-direction: column;
+                gap: 8px;
+                padding: 10px 20px;
+                text-align: center;
+            }
+
+            .why-choose-card {
+                width: calc(50% - 12px);
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .why-choose-card {
+                width: 100%;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Reviews Banner */
+        .reviews-banner {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .reviews-banner-left h2 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .reviews-banner-left p {
+            font-size: 13px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .reviews-platforms {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .review-platform-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .platform-logo-wrapper {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .platform-logo-wrapper.google-logo {
+            font-weight: 700;
+            color: #ea4335;
+            /* Fallback Google Red */
+        }
+
+        .platform-logo-wrapper.google-logo i {
+            background: linear-gradient(135deg, #4285f4, #34a853, #fbbc05, #ea4335);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .platform-logo-wrapper.facebook-logo {
+            background-color: #1877f2;
+            color: var(--white);
+        }
+
+        .review-platform-info {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .rating-stars-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .rating-num {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .stars-container {
+            display: flex;
+            gap: 2px;
+            color: #fbbc05;
+            /* Google Star Yellow */
+            font-size: 12px;
+        }
+
+        .review-count {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-top: 2px;
+        }
+
+        /* Videos & Shorts Sections */
+        .treatment-media-section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .treatment-media-section h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--dark-teal);
+            margin-bottom: 6px;
+        }
+
+        .treatment-media-section p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .media-pills-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .media-pill {
+            background-color: var(--white);
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .media-pill:hover,
+        .media-pill.active {
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: 0 2px 8px rgba(0, 178, 184, 0.08);
+        }
+
+        /* FAQ Accordion Section */
+        .faq-section {
+            max-width: 900px;
+            margin: 60px auto 80px auto;
+            padding: 0 20px;
+        }
+
+        .faq-section h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: var(--dark-teal);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 16px;
+        }
+
+        .faq-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            gap: 20px;
+            padding: 8px 0;
+        }
+
+        .faq-question {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark-teal);
+            transition: var(--transition);
+            text-align: left;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary);
+        }
+
+        .faq-toggle-btn {
+            color: var(--primary);
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .faq-toggle-btn i {
+            transition: var(--transition);
+        }
+
+        .faq-item.active .faq-toggle-btn i {
+            transform: rotate(45deg);
+        }
+
+        .faq-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding-top 0.3s ease-out;
+            padding-top: 0;
+        }
+
+        .faq-item.active .faq-body {
+            max-height: 300px;
+            padding-top: 10px;
+        }
+
+        .faq-answer {
+            font-size: 14px;
+            color: var(--text-dark);
+            line-height: 1.6;
+            text-align: left;
+            padding-bottom: 14px;
+        }
+
+        .footer-container {
+            background-color: #0F1724;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 12px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .footer-container a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Adjustments for Reviews and Media sections */
+        @media (max-width: 768px) {
+            .reviews-banner {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .reviews-platforms {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="Oliva-Logo.svg" alt="Oliva Skin Hair Body Clinic">
+        </div>
+
+    </header>
+
+
+
+    <!-- Main Hero Section -->
+    <main class="hero-container">
+
+        <!-- Left Side Content -->
+        <section class="content-left">
+            <h1 class="main-title">
+                Best Dermatologists & Skin Specialists in Sarabha Nagar | Trusted Skin, Hair & Body Clinic
+            </h1>
+            <h2 class="sub-title">Leading Chain Of Skin And Hair Clinics in India</h2>
+
+            <p class="description-text" id="desc-para">
+                Discover what awaits you at Oliva Clinics, India's most-trusted aesthetic-dermatology clinic chain, now
+                in Sarabha Nagar, Ludhiana. With more than 125 experienced dermatologists offering customised,
+                FDA-approved solutions, you can be assured of holistic treatments with guaranteed safety and optimal
+                results. Our doctors provide science-backed solutions for acne, scars, pigmentation, open pores, dull
+                skin, hair loss and thinning, unwanted hair growth, ageing signs, and weight management concerns. If you
+                are in Gurdev Nagar, Vishal Nagar, Shastri Nagar, Bhai Randhir Singh Nagar, Model Town, Shaheed Bhagat
+                Singh Nagar, Krishna Nagar, Maharaj Nagar, we are just around the corner.<span
+                    id="hidden-dots">...</span><span id="more-text" class="hidden-text"> They carefully personalise
+                    every client's treatment plan, which starts with a 5-step consultation process, VDiscover, to
+                    provide a holistic understanding of the concern. They address the root cause, ensuring visible,
+                    long-lasting results. We are also the first in the country to use DNA-based testing for dermatology
+                    in India, offering preventive and corrective solutions. Our 8 lakh clients, with a 97% satisfaction
+                    rate, are proof of Oliva Clinics' unique approach, so clients can feel young and look younger. Our
+                    treatments, including PRP for hair loss, QR678 NEO, MNRF, chemical peels, Botox, fillers, skin
+                    boosters, body contouring, medi-facials, and more, can give you the transformation you desire. You
+                    can start your journey today without stress, as we also offer flexible payment and no-cost EMI
+                    plans, making world-class dermatology treatments accessible to all.</span>
+                <span id="toggle-read-more" class="read-more-btn" onclick="toggleReadMore()">Read More</span>
+            </p>
+
+            <!-- Address Card -->
+            <div class="address-card">
+                <div class="address-image-wrapper">
+                    <img class="address-image" src="side.webp" alt="Oliva Clinic Sarabha Nagar Lobby">
+                </div>
+                <div class="address-info">
+                    <h3>Clinic Address</h3>
+                    <p class="address-details">
+                        No 67-D, nearby Garden Cafe, D-Block, Sarabha Nagar, Ludhiana, Punjab 141001
+                    </p>
+                    <div class="address-actions">
+                        <button class="phone-btn" onclick="window.location.href='tel:9781124800'">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            9781124800
+                        </button>
+                        <a class="action-link" href="#">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            Send Address to Phone
+                        </a>
+                        <a class="action-link" href="#" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            View on Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Side Booking Form -->
+        <section class="form-container">
+            <h2>Book your appointment today!</h2>
+            <p>Discover the Science of Oliva! Find the perfect skin, hair, and body treatments customised just for you!
+            </p>
+
+            <form id="appointmentForm">
+                <!-- Full Name -->
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5f7d95" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <input type="text" placeholder="Full Name*" required name="full_name">
+                    </div>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-venus-mars"></i>
+                        <select required name="gender">
+                            <option value="" disabled selected>Gender*</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-wrapper">
+
+                        <input type="number" placeholder="Age*" required name="age">
+                    </div>
+                </div>
+
+                <!-- Phone Row -->
+                <div class="phone-row">
+                    <div class="country-code-wrapper">
+                        <select name="country_code" id="q_ccode">
+
+                            <option value="+93">+93</option>
+                            <option value="+355">+355</option>
+                            <option value="+213">+213</option>
+                            <option value="+376">+376</option>
+                            <option value="+244">+244</option>
+                            <option value="+54">+54</option>
+                            <option value="+374">+374</option>
+                            <option value="+61">+61</option>
+                            <option value="+43">+43</option>
+                            <option value="+994">+994</option>
+
+                            <option value="+973">+973</option>
+                            <option value="+880">+880</option>
+                            <option value="+375">+375</option>
+                            <option value="+32">+32</option>
+                            <option value="+975">+975</option>
+                            <option value="+591">+591</option>
+                            <option value="+387">+387</option>
+                            <option value="+267">+267</option>
+                            <option value="+55">+55</option>
+                            <option value="+673">+673</option>
+
+                            <option value="+855">+855</option>
+                            <option value="+237">+237</option>
+                            <option value="+1">+1</option>
+                            <option value="+56">+56</option>
+                            <option value="+86">+86</option>
+                            <option value="+57">+57</option>
+                            <option value="+506">+506</option>
+                            <option value="+385">+385</option>
+                            <option value="+357">+357</option>
+                            <option value="+420">+420</option>
+
+                            <option value="+45">+45</option>
+                            <option value="+20">+20</option>
+                            <option value="+372">+372</option>
+                            <option value="+251">+251</option>
+
+                            <option value="+358">+358</option>
+                            <option value="+33">+33</option>
+
+                            <option value="+995">+995</option>
+                            <option value="+49">+49</option>
+                            <option value="+30">+30</option>
+
+                            <option value="+852">+852</option>
+                            <option value="+36">+36</option>
+
+                            <option value="+91" selected>+91</option>
+                            <option value="+62">+62</option>
+                            <option value="+98">+98</option>
+                            <option value="+964">+964</option>
+                            <option value="+353">+353</option>
+                            <option value="+972">+972</option>
+                            <option value="+39">+39</option>
+
+                            <option value="+81">+81</option>
+                            <option value="+962">+962</option>
+
+                            <option value="+7">+7</option>
+                            <option value="+254">+254</option>
+                            <option value="+965">+965</option>
+
+                            <option value="+856">+856</option>
+                            <option value="+371">+371</option>
+                            <option value="+961">+961</option>
+                            <option value="+370">+370</option>
+
+                            <option value="+60">+60</option>
+                            <option value="+960">+960</option>
+                            <option value="+356">+356</option>
+                            <option value="+52">+52</option>
+                            <option value="+976">+976</option>
+                            <option value="+212">+212</option>
+                            <option value="+95">+95</option>
+
+                            <option value="+977">+977</option>
+                            <option value="+31">+31</option>
+                            <option value="+64">+64</option>
+                            <option value="+234">+234</option>
+                            <option value="+47">+47</option>
+
+                            <option value="+968">+968</option>
+
+                            <option value="+92">+92</option>
+                            <option value="+507">+507</option>
+                            <option value="+51">+51</option>
+                            <option value="+63">+63</option>
+                            <option value="+48">+48</option>
+                            <option value="+351">+351</option>
+
+                            <option value="+974">+974</option>
+
+                            <option value="+40">+40</option>
+                            <option value="+7">+7</option>
+
+                            <option value="+966">+966</option>
+                            <option value="+65">+65</option>
+                            <option value="+421">+421</option>
+                            <option value="+27">+27</option>
+                            <option value="+82">+82</option>
+                            <option value="+34">+34</option>
+                            <option value="+94">+94</option>
+                            <option value="+46">+46</option>
+                            <option value="+41">+41</option>
+
+                            <option value="+886">+886</option>
+                            <option value="+66">+66</option>
+                            <option value="+90">+90</option>
+
+                            <option value="+971">+971</option>
+                            <option value="+44">+44</option>
+                            <option value="+1">+1</option>
+                            <option value="+84">+84</option>
+
+                        </select>
+                    </div>
+                    <div class="phone-number-wrapper">
+                        <div class="input-wrapper">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5f7d95"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <input type="tel" placeholder="Phone Number*" name="phone" pattern="[0-9]{10}"
+                                title="Please enter a valid 10-digit phone number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Select Service -->
+                <div class="form-group">
+                    <div class="input-wrapper select-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5f7d95" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 11h2M4 9h2M6 8h3v6H6z" fill="#5f7d95"></path>
+                            <path d="M9 7h8a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H9V7z"></path>
+                            <path d="M11 15v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-5"></path>
+                            <path d="M9 15c1 0 1.5-1 1.5-1.5"></path>
+                        </svg>
+                        <select required name="service">
+                            <option value="" disabled selected>Select Service*</option>
+
+                            <optgroup label="Unwanted Hair">
+                                <option value="permanent-laser-hair-removal">Permanent Laser Hair Removal</option>
+                            </optgroup>
+
+                            <optgroup label="Skin">
+                                <option value="pimple-treatment">Pimple Treatment</option>
+                                <option value="acne-scar-treatment">Acne Scar Treatment</option>
+                                <option value="skin-whitening">Skin Whitening</option>
+                                <option value="insta-glow-treatment">Insta Glow Treatment</option>
+                                <option value="stretch-marks-treatment">Stretch Marks Treatment</option>
+                                <option value="tattoo-removal-treatment">Tattoo Removal Treatment</option>
+                                <option value="pigmentation-treatment">Pigmentation Treatment</option>
+                                <option value="dull-skin-treatment">Dull Skin Treatment</option>
+                                <option value="black-peel-treatment">Black Peel Treatment</option>
+                                <option value="anti-aging">Anti Aging</option>
+                                <option value="botox-treatment">Botox Treatment</option>
+                                <option value="fillers-treatment">Fillers Treatment</option>
+                                <option value="hydrageneo-treatment">Hydrageneo Treatment</option>
+                                <option value="chin-sculpting-treatment">Chin Sculpting Treatment</option>
+                                <option value="moles-removal">Moles Removal</option>
+                                <option value="warts-removal">Warts Removal</option>
+                            </optgroup>
+
+                            <optgroup label="Hair">
+                                <option value="hair-loss-treatment">Hair Loss Treatment</option>
+                                <option value="prp-hair-treatment">PRP Hair Treatment</option>
+                                <option value="hair-transplantation">Hair Transplantation</option>
+                                <option value="hair-thread-treatment">Hair Thread Treatment</option>
+                            </optgroup>
+
+                            <optgroup label="Weight Loss">
+                                <option value="fat-loss-inch-loss">Fat Loss/Inch Loss</option>
+                                <option value="body-contouring">Body Contouring</option>
+                                <option value="weight-loss-treatment">Weight Loss Treatment</option>
+                                <option value="weight-management-program">Weight Management Program</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+
+                <!-- Terms -->
+                <p class="terms-text">By clicking Book Now, I agree to the terms and conditions.</p>
+            </form>
+        </section>
+
+    </main>
+    <!-- Top Info Bar -->
+    <div class="top-info-bar">
+        <div class="info-item">
+            <i class="fa-regular fa-calendar-days"></i>
+            <span>Monday-Sunday 10AM - 8PM</span>
+        </div>
+        <div class="info-item">
+            <i class="fa-regular fa-circle-question"></i>
+            <span>Consultation Fee: ₹900</span>
+        </div>
+        <div class="payment-methods">
+            <span>Payment Methods</span>
+            <div class="payment-icons">
+                <i class="fa-regular fa-credit-card" style="font-size: 16px;"></i>
+                <i class="fa-brands fa-google-pay" style="font-size: 24px; line-height: 1;"></i>
+                <span class="payment-icon-badge">UPI</span>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Oliva Section -->
+    <section class="why-choose-section">
+        <h2 class="section-title">Why Choose Oliva Clinic For Skin, Hair & Aesthetic Treatments</h2>
+        <div class="why-choose-grid">
+            <!-- Card 1 -->
+            <div class="why-choose-card">
+                <div class="card-icon-wrapper">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <p>Over 125 experienced MD-certified dermatologists.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="why-choose-card">
+                <div class="card-icon-wrapper">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </div>
+                <p>A 5-step consultation to understand your skin, hair & body.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="why-choose-card">
+                <div class="fda-icon-wrapper">
+                    FDA
+                </div>
+                <p>US-FDA approved equipment ensuring safety and effectiveness.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="why-choose-card">
+                <div class="card-icon-wrapper">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <p>Achieve significant improvement in a few sessions.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="why-choose-card">
+                <div class="card-icon-wrapper">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <p>No hidden costs. We ensure full transparency at every step.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="why-choose-card">
+                <div class="card-icon-wrapper">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <p>Served 8,00,000+ happy clients with a 95% satisfaction rate.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-strip">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>125+</h3>
+                <h4>Expert Dermatologists</h4>
+                <p>Rigorously Trained</p>
+            </div>
+            <div class="stat-item">
+                <h3>750000+</h3>
+                <h4>Happy Customers</h4>
+                <p>Based on Reviews</p>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <h4>Client Satisfaction</h4>
+                <p>Feedback Survey</p>
+            </div>
+            <div class="stat-item">
+                <h3>34</h3>
+                <h4>Clinics in 9 Cities</h4>
+                <p>Strategic Locations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Results Section -->
+    <section class="before-after-section">
+        <h2>Before & After Results</h2>
+        <p>Check out real before & after photos of Oliva's clients that highlight visible results from treatments such
+            as laser hair removal, acne scar reduction, anti-aging procedures, and more, helping you make an informed
+            choice.</p>
+
+        <div class="tabs-container-wrapper">
+            <div class="tabs-container" id="tabs-container">
+                <button class="tab-btn active" onclick="selectTab(this)">Laser Hair Removal</button>
+                <button class="tab-btn" onclick="selectTab(this)">Skin Whitening Treatment</button>
+                <button class="tab-btn" onclick="selectTab(this)">Hair Loss Treatment</button>
+                <button class="tab-btn" onclick="selectTab(this)">Hair Loss Men</button>
+                <button class="tab-btn" onclick="selectTab(this)">Hair Transplant</button>
+                <button class="tab-btn" onclick="selectTab(this)">Scalp Refine treatment</button>
+                <button class="tab-btn" onclick="selectTab(this)">QR678 Neo</button>
+                <button class="tab-btn" onclick="selectTab(this)">Scar Removal</button>
+                <button class="tab-btn" onclick="selectTab(this)">Hair Loss Threads</button>
+                <button class="tab-btn" onclick="selectTab(this)">Skin Pigmentation</button>
+                <button class="tab-btn" onclick="selectTab(this)">Dark Circle Treatment</button>
+            </div>
+            <button class="tab-scroll-btn" onclick="scrollTabsRight()" title="Scroll Right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Reviews Banner Section -->
+    <section class="reviews-banner">
+        <div class="reviews-banner-left">
+            <h2>Highest Rated</h2>
+            <p>Dermatology Clinic Chain in India</p>
+        </div>
+        <div class="reviews-platforms">
+            <!-- Google Reviews -->
+            <div class="review-platform-item">
+                <div class="platform-logo-wrapper google-logo">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                <div class="review-platform-info">
+                    <div class="rating-stars-row">
+                        <span class="rating-num">4.8</span>
+                        <div class="stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <span class="review-count">23423 Reviews</span>
+                </div>
+            </div>
+            <!-- Facebook Reviews -->
+            <div class="review-platform-item">
+                <div class="platform-logo-wrapper facebook-logo">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="review-platform-info">
+                    <div class="rating-stars-row">
+                        <span class="rating-num">4.6</span>
+                        <div class="stars-container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <span class="review-count">310 Reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Videos Section -->
+    <section class="treatment-media-section">
+        <h2>Treatment Videos</h2>
+        <p>Unlock Your Best Self With The Best Skin, Hair & Body Tips & Treatment Videos!</p>
+        <div class="media-pills-row" id="videos-pills">
+            <button class="media-pill active" onclick="toggleMediaPill(this, 'videos-pills')">Laser Hair
+                Removal</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'videos-pills')">Pimple</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'videos-pills')">Acne Scars</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'videos-pills')">Hair Loss</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'videos-pills')">Skin Lightening</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'videos-pills')">Stretch Marks</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'videos-pills')">Anti Aging</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'videos-pills')">Body Contouring</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'videos-pills')">Dark Circle</button>
+        </div>
+    </section>
+
+    <!-- Treatment Shorts Section -->
+    <section class="treatment-media-section" style="margin-top: 40px;">
+        <h2>Treatment Shorts</h2>
+        <p>Unlock Healthy Skin, Hair & Body: Insights from Our Dermatologists!</p>
+        <div class="media-pills-row" id="shorts-pills">
+            <button class="media-pill active" onclick="toggleMediaPill(this, 'shorts-pills')">Laser Hair
+                Removal</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'shorts-pills')">Hair Fall</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'shorts-pills')">Acne Scar</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'shorts-pills')">Pimple</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'shorts-pills')">Pigmentation</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'shorts-pills')">Weight Loss</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'shorts-pills')">Anti Ageing</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'shorts-pills')">Hair Care Tips</button>
+            <button class="media-pill" onclick="toggleMediaPill(this, 'shorts-pills')">Skin Care Tips</button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <!-- FAQ 1 -->
+            <div class="faq-item active">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">Where is Oliva Skin, Hair and Body Clinic located in Sarabha
+                        Nagar?</span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body" style="max-height: 300px;">
+                    <div class="faq-answer">
+                        Oliva Clinics, the best dermatology clinic in Sarabha Nagar, is conveniently located in the
+                        heart of the area for easy access to expert skin, hair and body care. You can find us at No.
+                        67-D, nearby Garden Cafe, D-Block, Sarabha Nagar, Ludhiana. If you are in Gurdev Nagar, Vishal
+                        Nagar, Shastri Nagar, Bhai Randhir Singh Nagar, Model Town, Shaheed Bhagat Singh Nagar, Krishna
+                        Nagar, Maharaj Nagar, we are just around the corner.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">What are the clinic timings for Oliva Sarabha Nagar?</span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-answer">
+                        Oliva Clinics at Sarabha Nagar is open from 10 AM to 8 PM, Monday to Sunday, offering flexible
+                        hours for your convenience.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">How can I book an appointment at Oliva Clinics, Sarabha Nagar?</span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-answer">
+                        You can easily book an appointment online through Oliva’s website or call 89777 55458 to
+                        directly schedule a consultation with the best dermatologist in Sarabha Nagar.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">What skin treatments are available at Oliva Sarabha Nagar?</span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-answer">
+                        The skin specialists in Sarabha Nagar at Oliva Clinics offer treatments for acne, pigmentation,
+                        scars, dull skin, anti-ageing, and more.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">Does Oliva Clinics in Sarabha Nagar offer hair loss treatments?
+
+                    </span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-answer">
+                        Yes, Oliva Clinics has experienced dermatologists in Sarabha Nagar who offer advanced hair loss
+                        and hair regrowth solutions like PRP, QR678 Neo, hair threads and hair transplant procedures.
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">Is laser hair removal available at Oliva Sarabha Nagar clinic?
+
+                    </span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-answer">
+                        Yes, Oliva Clinics in Sarabha Nagar offers safe, US FDA-approved laser hair removal for men and
+                        women, ensuring smooth, hair-free skin.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">Are certified dermatologists present at Oliva Clinics, Sarabha
+                        Nagar?</span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-answer">
+                        Yes, Oliva has highly qualified and certified dermatologists in Sarabha Nagar with expertise in
+                        advanced aesthetic treatments.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">What is the cost of treatments at Oliva Skin, Hair and Body Clinic
+                        Sarabha Nagar?</span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-answer">
+                        The treatment costs are competitive and affordable. They vary based on the concern and its
+                        severity, the procedure, the technology used, and the number of sessions. For an accurate price,
+                        please book a consultation with our expert. At Oliva Clinics in Sarabha Nagar, we ensure
+                        transparent pricing and customised treatment plans.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">Is there parking available at Oliva Clinics, Sarabha Nagar?</span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-answer">
+                        Yes, the clinic offers convenient on-site parking for a comfortable visit.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header" onclick="toggleFaq(this)">
+                    <span class="faq-question">Are the treatments at Oliva Sarabha Nagar safe and scientifically
+                        approved?</span>
+                    <span class="faq-toggle-btn"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="faq-body">
+                    <div class="faq-answer">
+                        Absolutely! All the treatments at Oliva Clinics in Sarabha Nagar are dermatologist-led, US
+                        FDA-approved, and scientifically backed to ensure safe, visible and long-lasting results.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            2026 Oliva Clinic. All rights reserved.
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Disclaimer</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+       
+        const APP_SCRIPT_URL = "https://docs.google.com/spreadsheets/d/1Oaypo1CA-VZe0VhJjTBz_JsJQ_ymJaOuVzO00MXMeFs/edit?usp=sharing"; 
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('appointmentForm');
+            if (form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    const submitBtn = form.querySelector('.submit-btn');
+                    const originalBtnText = submitBtn.innerText;
+                    submitBtn.innerText = "Submitting...";
+                    submitBtn.disabled = true;
+
+                    // Gather form data
+                    const payload = {
+                        full_name: form.querySelector('[name="full_name"]').value,
+                        gender: form.querySelector('[name="gender"]').value,
+                        age: form.querySelector('[name="age"]').value,
+                        country_code: form.querySelector('[name="country_code"]').value,
+                        phone: form.querySelector('[name="phone"]').value,
+                        service: form.querySelector('[name="service"]').value
+                    };
+
+                    fetch(APP_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors', 
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    })
+                    .then(response => {
+                        alert("Appointment submitted successfully! Your data has been saved to Google Sheets.");
+                        form.reset();
+                    })
+                    .catch(error => {
+                        console.error('Error submitting form:', error);
+                        alert("There was an error submitting your appointment. Please try again.");
+                    })
+                    .finally(() => {
+                        submitBtn.innerText = originalBtnText;
+                        submitBtn.disabled = false;
+                    });
+                });
+            }
+        });
+        function toggleReadMore() {
+            var moreText = document.getElementById("more-text");
+            var btnText = document.getElementById("toggle-read-more");
+            var dots = document.getElementById("hidden-dots");
+
+            if (moreText.style.display === "inline" || moreText.style.display === "block") {
+                moreText.style.display = "none";
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read More";
+            } else {
+                moreText.style.display = "inline";
+                dots.style.display = "none";
+                btnText.innerHTML = "Read Less";
+            }
+        }
+
+        function scrollTabsRight() {
+            const container = document.getElementById('tabs-container');
+            container.scrollBy({ left: 150, behavior: 'smooth' });
+        }
+
+        function selectTab(btn) {
+            const tabs = document.querySelectorAll('.tab-btn');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        function toggleMediaPill(pill, containerId) {
+            const pills = document.querySelectorAll(`#${containerId} .media-pill`);
+            pills.forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+        }
+
+        function toggleFaq(headerElement) {
+            const currentItem = headerElement.parentElement;
+            const allItems = document.querySelectorAll('.faq-item');
+
+            allItems.forEach(item => {
+                if (item !== currentItem) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-body').style.maxHeight = null;
+                }
+            });
+
+            currentItem.classList.toggle('active');
+            const body = currentItem.querySelector('.faq-body');
+            if (currentItem.classList.contains('active')) {
+                body.style.maxHeight = body.scrollHeight + "px";
+            } else {
+                body.style.maxHeight = null;
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const activeFaq = document.querySelector('.faq-item.active');
+            if (activeFaq) {
+                const body = activeFaq.querySelector('.faq-body');
+                body.style.maxHeight = body.scrollHeight + 'px';
+            }
+        });
+    </script>
+</body>
+
+</html>
